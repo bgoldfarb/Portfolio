@@ -15,13 +15,27 @@ class Projects extends Component {
                 <div className= "projects-grid">
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: "#fff", height: '176px', background:'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>
-                    React Project #1
+                    Fast YouTube
                     </CardTitle>
                     <CardText>
-                        react description here
+                        Implementation of YouTube with auto loading
                     </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
+                        <Button colored ><a href="https://github.com/bgoldfarb/FastYouTube">FastYouTube</a></Button> 
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name="share "/>
+                    </CardMenu>
+                </Card>
+                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <CardTitle style={{color: "#fff", height: '176px', background:'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>
+                    Social Scraper
+                    </CardTitle>
+                    <CardText>
+                        React App to scrape Twitter to track social media involvement over time
+                    </CardText>
+                    <CardActions border>
+                        <Button colored><a href="https://github.com/bgoldfarb/FastYouTube">Social Scraper</a></Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share "/>
@@ -30,17 +44,18 @@ class Projects extends Component {
                 </Card>
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: "#fff", height: '176px', background:'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>
-                    React Project #1
+                    Geo Talk
                     </CardTitle>
                     <CardText>
-                        react description here
+                        React app that you can talk with people around you based on your location preferences
+                        and has goole oauth and google maps 
                     </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
+                        <Button colored ><a href="https://geo-talk-news.herokuapp.com/">GeoTalk</a></Button> 
+                        <Button colored ><a href="https://github.com/bgoldfarb/geo-talk">GitHub</a></Button> 
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share "/>
-
                     </CardMenu>
                 </Card>
                 </div>
@@ -48,17 +63,76 @@ class Projects extends Component {
         }
         else if(this.state.activeTab === 1){
             return(
-                <div><h1>This is Python</h1></div>
+                <div className= "projects-grid">
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: "", height: '176px', background:'url(https://i.pinimg.com/originals/95/d1/0f/95d10f502e973b4a79dae1e1882f623e.png) center / cover'}}>
+                        </CardTitle>
+                        <CardText>
+                            Fingerprint algorithms to detect stored fingerprints to open
+                            and close a lock
+                        </CardText>
+                        <CardActions border>
+                            <Button colored ><a href="https://github.com/bgoldfarb/BiometricSecurityScanner">Biometric security scanner</a></Button> 
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share "/>
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
         else if(this.state.activeTab === 2){
             return(
-                <div><h1>This is Java</h1></div>
+                <div className= "projects-grid">
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: "", height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png) center / cover'}}>
+                        OMS Pipeline Tool
+                        </CardTitle>
+                        <CardText>
+                           Tool to automate regression testing
+                        </CardText>
+                        <CardActions border>
+                            <Button colored ><a href="https://github.com/bgoldfarb/OMSPipelineTool">OMS Pipeline Tool</a></Button> 
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share "/>
+                        </CardMenu>
+                    </Card>
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: "", height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png) center / cover'}}>
+                        Library Database
+                        </CardTitle>
+                        <CardText>
+                           Library Database SQL queries and Functionality
+                        </CardText>
+                        <CardActions border>
+                            <Button colored ><a href="https://github.com/bgoldfarb/libraryDatabase">Library Database</a></Button> 
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share "/>
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
         else if(this.state.activeTab === 3){
             return(
-                <div><h1>This is JavaScript</h1></div>
+                <div className= "projects-grid">
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: "", height: '176px', background:'url() center / cover'}}>
+                        Test Driven Vending Machine Kata
+                        </CardTitle>
+                        <CardText>
+                        Test Driven Vending Machine Kata
+                        </CardText>
+                        <CardActions border>
+                            <Button colored ><a href="https://github.com/bgoldfarb/VendingMachinesTDD">Vending Machine TDD</a></Button> 
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share "/>
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
     }
